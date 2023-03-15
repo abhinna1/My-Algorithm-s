@@ -19,14 +19,14 @@ class BinaryTree:
             if data > curr.data:
                 if curr.right == None:
                     curr.right = Node(data)
-                    curr = None
+                    break
                 else:
                     curr = curr.right
                     # return
             else:
                 if curr.left == None:
                     curr.left = Node(data)
-                    curr = None
+                    break
                 else:
                     curr = curr.left
                     # return
@@ -34,3 +34,12 @@ class BinaryTree:
     def getRoot(self) -> Node:
         return self.root
     
+
+bst = BinaryTree()
+
+bst.addNode(10)
+bst.addNode(11)
+bst.addNode(2)
+bst.addNode(4)
+
+print(bst.getRoot().left.right.data)
