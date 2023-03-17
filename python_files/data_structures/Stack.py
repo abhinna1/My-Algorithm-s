@@ -11,12 +11,3 @@ class Stack:
     
     def printStack(self) -> None:
         print(self.stack)
-    
-stack = Stack()
-stack.push(1)
-stack.push(2)
-stack.push(3)
-stack.push(4)
-print(stack.pop())
-
-stack.printStack()
