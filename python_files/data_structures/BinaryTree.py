@@ -33,13 +33,3 @@ class BinaryTree:
         
     def getRoot(self) -> Node:
         return self.root
-    
-
-bst = BinaryTree()
-
-bst.addNode(10)
-bst.addNode(11)
-bst.addNode(2)
-bst.addNode(4)
-
-print(bst.getRoot().left.right.data)
